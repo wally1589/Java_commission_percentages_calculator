@@ -1,0 +1,49 @@
+ /* Name: Wally R.
+ /* Date: 3/20
+ /* Program Name: Individualw2
+ /* Description: this is week 2 assignment. in which it will illustrate the salary of a person that has
+ /*   			 a specific income of 45000. of which he earns 3% of commission from sales. It will request to input 
+ /* 			 the amount of sales(commission), and then it will the display the total of salary and commission.
+ /*				 And then it will display 3 percent of the sales. It is going to be a multiple program. 
+  */
+
+import java.util.Scanner;				 
+public class individualw2 
+{
+	public static void main(String[] args)
+	{
+		// These are the variables will be to calculate the percentage of the commission.
+		// Commission will be able to be inputed by the user. Total is a fixed amount of 45000 of Salary
+		// Rate will calculate the 3 percent of 100 and this operation is done before multiplying it
+		// with the commission. Then at the end it will display the total of commission and total
+		// then it will display the 3% of the sales.
+		
+		float commission = 0;
+		float salary = 45000;
+		float rate = (3.0f/100.0f);
+		
+		//The sequence will prompt the user for the amount of sales, and then it will display 
+		//the total (commission + salary). Commission will multiply the variable inputed with the rate
+		//salary with add commission with salary. Then it will display the dialog in addition with the calculation
+		//of salary. Then it will display dialog, in addition with the calculation of commission. I added the class 
+		// in between the final statements and it will display the s
+		
+	    System.out.println(" Enter the sales: ");
+	    
+	    Scanner input = new Scanner(System.in);
+	    commission = input.nextFloat();
+	    
+	    commission = (commission*rate);
+	    salary = commission + salary;
+	    
+	    individualw2additionclass display = new individualw2additionclass();
+	    
+	    display.restofprogram();
+	    
+	    System.out.println(" Your total earnings is: " + salary);
+	    System.out.println(" Your commision from sales is: " + commission);
+	    
+	    display.restofprogram();
+	  	   
+	}   		
+	    		
